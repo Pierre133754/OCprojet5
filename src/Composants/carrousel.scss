@@ -1,0 +1,49 @@
+.spin {
+    position: relative;
+    img {
+        height: 415px;
+        object-fit: cover;
+        width: 100%;
+        border-radius: 25px;
+    }
+    &Case{
+        height: 90px;
+        width: 90px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &Counter {
+            position: absolute;
+            top: 88%;
+            left: 48.8%;
+            margin: 0;
+            color: white;
+            font-family: "Montserrat";
+            font-weight: 500;
+            font-size: 18px;
+            text-align: right;
+            height: 30px;
+            width: 30px;
+        }
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    .Left {
+        top: 40%;
+        left: 3%;
+        transform: rotate(135deg);
+    }
+    .Right {
+        top: 40%;
+        right: 3%;
+        transform: rotate(315deg);
+    }
+    .arrow {
+        border: solid white;
+        border-width: 0 8px 8px 0;
+        display: inline-block;
+        padding: 20px;
+    }
+}

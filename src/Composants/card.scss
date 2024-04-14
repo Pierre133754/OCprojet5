@@ -1,0 +1,30 @@
+.cardBase {
+    height: 340px;
+    width: 340px;
+    border-radius: 10px;
+}
+
+.card {
+    position: relative;
+    box-shadow: 4px 4px 4px 0px #00000040;
+    &Text {
+        color: white;
+        font-family: "Montserrat";
+        font-weight: 700;
+        font-size: 18px;
+        margin: 0 10px;
+    }
+    &Img {
+        object-fit: cover;
+    }
+    &Div {
+        position: absolute;
+        bottom: 10px;
+        left: 5%;
+        width: 90%;
+        height: 15%;
+        background: linear-gradient(#FF6060,#c24848);
+        display: flex;
+        align-items: center;
+    }
+}

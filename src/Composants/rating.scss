@@ -1,0 +1,12 @@
+.rating {
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    justify-content: space-evenly;
+    .fa-star {
+        color: #E3E3E3;
+    }
+    .checked {
+        color: #FF6060;
+    }
+}
