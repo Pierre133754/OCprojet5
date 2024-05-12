@@ -9,6 +9,9 @@ import Rating from "../Composants/rating";
 
 function Logement() {
     var logement = logements.find((logement) => ("/Logement/"+logement.id === window.location.pathname))
+    if (!logement) {
+        window.location.pathname = "no,_you_suck";
+    }
     var equipements = logement.equipments.toString().replaceAll(",","\n")
     return (
         <React.StrictMode>

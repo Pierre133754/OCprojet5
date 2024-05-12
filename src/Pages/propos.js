@@ -10,7 +10,7 @@ function Propos() {
         <React.StrictMode>
             <Header />
             <section className="propos">
-                <Banner background={moutains} darken={0.3} />
+                <Banner background={moutains} darken={0.3} alt="Mountains"/>
                 <div className="proposCollapse">
                     <Collapse fontSize={"24px"} title="Fiabilité" text="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes." />
                     <Collapse fontSize={"24px"} title="Respect" text="La bienveillance dait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme" />
