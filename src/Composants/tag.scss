@@ -2,11 +2,21 @@
     padding: 4px 15px 4px;
     background-color: #FF6060;
     border-radius: 25px;
-    p{
+    p {
         margin: 0;
         color: white;
         font-family: "Montserrat";
         font-weight: 700;
         font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .tag {
+        padding: 2px 20px 2px;
+        border-radius: 6px;
+        p {
+            font-size: 10px;
+        }
     }
 }

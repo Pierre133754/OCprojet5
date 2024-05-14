@@ -13,6 +13,17 @@ function Logement() {
         window.location.pathname = "no,_you_suck";
     }
     var equipements = logement.equipments.toString().replaceAll(",","\n")
+    /* preload stuff for maybe */
+    /* preload images maybe ? */
+        /* yes, preload images */
+        /* https://www.youtube.com/watch?v=dQw4w9WgXcQ */
+        /* var imgs = [];
+        var img1 = logements.map(udgzqhgd => udgzqhgd.pictures);
+        img1.map(dog => dog.map(cat => imgs.push(cat))); */
+        logement.pictures.forEach((wowee) => {
+            new Image().src = wowee;
+        });
+        /* clarity */
     return (
         <React.StrictMode>
             <Header />
@@ -25,9 +36,10 @@ function Logement() {
                         <h1>{logement.title}</h1>
                         <p>{logement.location}</p>
                     </div>
+                    {/* Learned here to look at both versions before making plns */}
                     <div className="pageNamesHost">
                         <p>{logement.host.name.replace(" ","\n")}</p>
-                        <img src={logement.host.picture}/>
+                        <img src={logement.host.picture} alt={"bozo named "+logement.host.name}/>
                     </div>
                 </div>
                 <div className="pageCounters">
@@ -36,8 +48,13 @@ function Logement() {
                             <Tag key={logement.id+tag} tag={tag}/>
                         ))}
                     </div>
-                    <div>
+                    {/* Learning init ? */}
+                    <div className="fix">
                         <Rating rating={logement.rating}/>
+                        <div className="fixHost">
+                            <p>{logement.host.name.replace(" ","\n")}</p>
+                            <img src={logement.host.picture} alt={"bozo named "+logement.host.name}/>
+                    </div>
                     </div>
                 </div>
                 <div className="pageCollapse">

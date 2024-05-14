@@ -10,3 +10,13 @@
         color: #FF6060;
     }
 }
+
+@media (max-width: 768px) {
+    .rating {
+        width: 90px;
+        justify-content: space-between;
+        .fa-star {
+            font-size: 12px;
+        }
+    }
+}

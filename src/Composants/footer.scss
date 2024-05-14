@@ -21,3 +21,14 @@
     width: 100%; */
     /* need to add placeholder space for footer to not get on top of stuff */
 }
+
+@media (max-width: 768px) {
+    .footer {
+        margin-top: 20px;
+        &Text {
+            font-size: 12px;
+            text-align: center;
+            margin: 0px 120px 50px;
+        }
+    }   
+}

@@ -28,3 +28,19 @@
         align-items: center;
     }
 }
+
+@media (max-width: 768px) {
+    .cardBase {
+        width: 335px;
+        height: 255px;
+    }
+
+    .card {
+        &Div {
+            width: 95%;
+            height: 20%;
+            bottom: 5px;
+            left: 2.5%;
+        }
+    }
+}

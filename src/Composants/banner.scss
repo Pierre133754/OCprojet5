@@ -34,3 +34,17 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .bannerBase {
+        height: 111px;
+        border-radius: 10px;
+    }
+    .banner {
+        margin-bottom: 20px;
+        &Text {
+            font-size: 24px;
+            margin: 20px;
+        }
+    }
+}

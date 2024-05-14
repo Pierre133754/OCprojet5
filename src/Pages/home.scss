@@ -11,3 +11,14 @@
         border-radius: 25px;
     }
 }
+
+@media (max-width: 768px) {
+    .home {
+        padding: 0 20px;
+        &Cards {
+            padding: 0;
+            row-gap: 20px;
+            background-color: white;
+        }
+    }
+}

@@ -12,8 +12,26 @@
             color: black;
             font-size: 24px;
             text-decoration: none;
+            font-weight: 700;
             &:hover {
                 text-decoration: underline;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        margin: 20px;
+        &Logo {
+            width: 145px;
+            height: auto;
+        }
+        &Nav {
+            gap: 26px;
+            a {
+                font-size: 12px;
+                text-transform: uppercase;
             }
         }
     }

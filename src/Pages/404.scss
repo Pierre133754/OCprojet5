@@ -12,15 +12,37 @@
     &Text {
         color: #FF6060;
         font-family: "Montserrat";
-        font-weight: 500;
+        font-weight: 700;
         font-size: 36px;
         margin: 40px 0 0 0;
+        text-align: center;
     }
     &Link {
         color: black;
         font-family: "Montserrat";
-        font-weight: 500;
+        font-weight: 700;
         font-size: 18px;
         margin: 80px 0 30px 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .errorText {
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 768px) {
+    .error {
+        &Big {
+            font-size: 96px;
+        }
+        &Text {
+            font-size: 18px;
+        }
+        &Link {
+            font-size: 14px;
+            margin: 80px 0;
+        }
     }
 }
