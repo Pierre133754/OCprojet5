@@ -34,6 +34,7 @@
 
 @media (max-width: 768px) {
     .error {
+        min-height: calc(100vh - 302px);
         &Big {
             font-size: 96px;
         }
